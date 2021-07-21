@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Indie+Flower&family=Patrick+Hand&family=Rock+Salt&family=Zeyada&display=swap');
+:root {
+    --rosado: #d40245;
+    --rosadoOscuro: #61001f;
+    --azul: #0063b4;
+    --azulOscuro: #002341;
+    --amarillo: #ff6a06;
+    --amarilloOscuro: #853500;
+}
+
+html {
+    margin-left: 100;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    border-left: 20px double;
+    border-color: rgb(247, 95, 116);
+}
+
+body {
+    font-family: 'Annie Use Your Telescope';
+    height: fit-content;
+}
+
+.note {
+    font-family: 'Zeyada';
+    text-align: center;
+    width: 90px;
+    height: fit-content;
+    border: 2px solid;
+    border-top: transparent;
+}
+
+#navBar {
+    width: 60%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#navBar a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0);
+}
+
+#navBar a:hover {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-decoration-line: underline;
+}
+
+#about {
+    background-color: var(--rosado);
+    border-color: var(--rosadoOscuro);
+}
+
+#projects {
+    background-color: var(--azul);
+    border-color: var(--azulOscuro);
+}
+
+#contact {
+    background-color: var(--amarillo);
+    border-color: var(--amarilloOscuro);
+}
+
+#mainDiv {
+    position: relative;
+    top: 50px;
+    font-size: 40px;
+}
+
+.text {
+    margin-left: 5px;
+    margin-right: 25px;
+    text-align: justify;
+}
+
+#name {
+    margin-bottom: -45px;
+}
+
+@media(max-height:400px) {
+    #navBar {
+        margin-left: -170px;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 40vw;
+    }
+    .note {
+        margin-bottom: 10px;
+        border-top: solid;
+    }
+    #mainDiv {
+        top: 5px;
+    }
+    .text {
+        text-align: left;
+    }
+}
